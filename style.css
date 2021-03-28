@@ -1,0 +1,96 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* reset css */
+@import url('./reset.css');
+
+/*=====================================
+    * header *
+=======================================*/
+
+.header {
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    animation: header 4s linear forwards;
+    opacity: 0;
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*=====================================
+    * main text *
+=======================================*/
+
+.main-text {
+    position: relative;
+    font-size: 1.1rem;
+    left: -1500px;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px 0;
+    animation: animate-text 1s forwards ease-out 0.5s;
+}
+
+@keyframes animate-text {
+    0% {
+        left: -1500px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*=====================================
+    * button *
+=======================================*/
+
+.btn {
+    display: block;
+    min-width: 110px;
+    background: transparent;
+    color: aliceblue;
+    text-align: center;
+    border: 1px solid aliceblue;
+    margin: 0 auto;
+    padding: 18px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: min-width 0.4s;
+    animation: btn 2s linear forwards 1s;
+    opacity: 0;
+}
+
+.btn:hover {
+    min-width: 135px;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

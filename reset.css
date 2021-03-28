@@ -1,0 +1,21 @@
+/*=====================================
+    * reset css *
+=======================================*/
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #20639b;
+    color: #222222;
+}
